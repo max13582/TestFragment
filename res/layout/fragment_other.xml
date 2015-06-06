@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/itemListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="true" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/emptyTxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center_vertical"
+        android:text="No Data Found"
+        android:textSize="35sp" />
+
+</LinearLayout>

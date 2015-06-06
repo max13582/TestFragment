@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/leftSide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageLeftOfLeftSide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/aoe_castle" />
+
+            <ImageView
+                android:id="@+id/imageRightOfLeftSide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/aoe_castle" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayoutOfLeftSide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:minHeight="250sp">
+
+            <TextView
+                android:id="@+id/textInfoOfLeftSide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FirstLine \nSecondLine"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/textBackgroundOfLeftSide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#cacaca" 
+                android:minLines="4"/>
+
+            <ImageView
+                android:id="@+id/imageProfileOfLeftSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:src="@drawable/ic_action_account_box" />
+
+            <TextView
+                android:id="@+id/textProfileOfLeftSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="10sp"
+                android:text="SomeInfo"
+                android:textSize="20sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rightSide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageLeftOfRightSide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/aoe_castle" />
+
+            <ImageView
+                android:id="@+id/imageRightOfRightSide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/aoe_castle" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayoutOfRightSide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textInfoOfRightSide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FirstLine \nSecondLine"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textBackgroundOfRightSide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#cacaca"
+                android:minLines="4"/>
+
+            <ImageView
+                android:id="@+id/imageProfileOfRightSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:src="@drawable/ic_action_account_box" />
+
+            <TextView
+                android:id="@+id/textProfileOfRightSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="10sp"
+                android:text="SomeInfo"
+                android:textSize="20sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
